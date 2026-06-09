@@ -1,0 +1,192 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #f4f6f8;
+    color: #202936;
+    font-family: Arial, sans-serif;
+}
+
+a {
+    color: #0b5cad;
+    text-decoration: none;
+}
+
+.auth-page {
+    align-items: center;
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    padding: 24px;
+}
+
+.auth-card,
+.panel {
+    background: #ffffff;
+    border: 1px solid #d9e0e7;
+    border-radius: 8px;
+    box-shadow: 0 12px 30px rgba(18, 38, 63, 0.08);
+}
+
+.auth-card {
+    max-width: 430px;
+    padding: 28px;
+    width: 100%;
+}
+
+h1,
+h2 {
+    margin: 0 0 16px;
+}
+
+.muted {
+    color: #697586;
+    margin-top: -8px;
+}
+
+.form {
+    display: grid;
+    gap: 16px;
+}
+
+.form.grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.form label {
+    color: #334155;
+    display: grid;
+    font-weight: 700;
+    gap: 7px;
+}
+
+.form input,
+.form select,
+.form textarea {
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font: inherit;
+    padding: 11px 12px;
+    width: 100%;
+}
+
+.form textarea {
+    resize: vertical;
+}
+
+.full {
+    grid-column: 1 / -1;
+}
+
+button {
+    background: #146c43;
+    border: 0;
+    border-radius: 6px;
+    color: #ffffff;
+    cursor: pointer;
+    font: inherit;
+    font-weight: 700;
+    padding: 12px 16px;
+}
+
+button:hover {
+    background: #0f5132;
+}
+
+.alert {
+    border-radius: 6px;
+    margin: 0 0 16px;
+    padding: 12px;
+}
+
+.alert.error {
+    background: #f8d7da;
+    color: #842029;
+}
+
+.alert.success {
+    background: #d1e7dd;
+    color: #0f5132;
+}
+
+.demo-users {
+    background: #eef4ff;
+    border-radius: 6px;
+    color: #243b53;
+    display: grid;
+    gap: 6px;
+    margin-top: 18px;
+    padding: 12px;
+}
+
+.topbar {
+    align-items: center;
+    background: #ffffff;
+    border-bottom: 1px solid #d9e0e7;
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 28px;
+}
+
+.topbar div {
+    display: grid;
+    gap: 4px;
+}
+
+.topbar span {
+    color: #697586;
+    font-size: 14px;
+}
+
+.page {
+    display: grid;
+    gap: 24px;
+    margin: 0 auto;
+    max-width: 1180px;
+    padding: 28px;
+}
+
+.panel {
+    padding: 24px;
+}
+
+.table-wrap {
+    overflow-x: auto;
+}
+
+table {
+    border-collapse: collapse;
+    min-width: 780px;
+    width: 100%;
+}
+
+th,
+td {
+    border-bottom: 1px solid #e2e8f0;
+    padding: 12px;
+    text-align: left;
+    vertical-align: top;
+}
+
+th {
+    background: #f8fafc;
+    color: #334155;
+}
+
+.empty {
+    color: #697586;
+    text-align: center;
+}
+
+@media (max-width: 700px) {
+    .form.grid {
+        grid-template-columns: 1fr;
+    }
+
+    .page,
+    .topbar {
+        padding: 18px;
+    }
+}
